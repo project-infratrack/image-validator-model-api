@@ -10,7 +10,7 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: InfratrackMLmodelDeploy
-  CONAINER_APP_NAME: imagevalidatormodelprod
+  CONAINER_APP_NAME: infratrack-ml-model
   RESOURCE_GROUP: rg-infratrack-backend-prod
 
 jobs:
