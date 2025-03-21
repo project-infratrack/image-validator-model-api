@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - release
-  pull_request: # Added event trigger for pull requests
+  pull_request: # Added event trigger for pull request
     branches:
       - main
 
