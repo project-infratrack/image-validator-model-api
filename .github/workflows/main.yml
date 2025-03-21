@@ -1,6 +1,9 @@
 name: Deploy Docker Image from Docker Hub to Azure Web App
 
 on:
+  push:
+    branches:
+      - release
   pull_request: # Added event trigger for pull requests
     branches:
       - main
