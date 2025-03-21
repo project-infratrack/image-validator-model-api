@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - release
+  pull_request: # Added event trigger for pull requests
+    branches:
+      - main
 
 jobs:
   build_and_deploy:
