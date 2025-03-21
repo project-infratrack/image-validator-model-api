@@ -32,6 +32,6 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: image-validator-model
+          app-name: image-validator-model-deploy
           publish-profile: ${{ secrets.azureWebAppPublishProfile }}
           images: ${{ secrets.DOCKER_USERNAME }}/image-validator-model-api:latest
