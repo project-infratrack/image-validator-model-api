@@ -52,7 +52,7 @@ jobs:
       - name: Deploy to Azure Container Apps
         uses: azure/container-apps-deploy-action@v1
         with:
-          imageToDeploy: ${{env.AZURE_CONTAINER_REGISTRY}}.azurecr.io/${{env.CONTAINER_APP_NAME}}:deploy
+          imageToDeploy: ${{env.AZURE_CONTAINER_REGISTRY}}.azurecr.io/projectinfratrack/infratrack-ml-model:deploy
           resourceGroup: ${{env.RESOURCE_GROUP}}
           containerAppName: ${{env.CONTAINER_APP_NAME}}
 
