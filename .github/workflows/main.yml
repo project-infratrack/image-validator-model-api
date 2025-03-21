@@ -29,11 +29,6 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/image-validator-model-api:latest
 
-      - name: Login to Azure CLI
-        uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
